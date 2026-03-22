@@ -2,7 +2,7 @@ title: Data Analyst Portfolio
 logo: Paul.jpg
 description: Portfolio showcasing data analysis projects using Excel, SQL, and Power BI
 remote_theme: pages-themes/cayman@v0.2.0
-url: "https://atanleypa.github.io"
-baseurl: ""
 plugins:
   - jekyll-remote-theme
+url: "https://atanleypa.github.io"
+baseurl: ""
