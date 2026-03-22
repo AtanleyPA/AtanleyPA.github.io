@@ -1,6 +1,7 @@
-title: Paul Atanley
-logo:
-description: A Results-driven Data Analyst with two years of experience transforming raw data into actionable insights. Proficient in Microsoft Excel, Strutured Query Language (SQL), and Power BI, with expertise in data cleaning, visualization, and dashboard creation. Demonstrates strong ability to identify trends and communicate findings effectively to support data-driven decision-making and business outcomes.
-#show_download: true
-#google analytics:
-theme: jekyII-theme-minimal
+title: Data Analyst Portfolio
+description: Portfolio showcasing data analysis projects using Excel, SQL, and Power BI
+remote_theme: pages-themes/cayman@v0.2.0
+url: "https://atanleypa.github.io"
+baseurl: ""
+plugins:
+  - jekyll-remote-theme
