@@ -20,7 +20,7 @@ The dashboard provides clear visibility into sales trends, identifies top-perfor
 
 *Profit by Product:* Visual representation of the profit from each product.
 
-*Sales trend:* A graphical representation of the amoount of sales over the perion of time.
+*Sales trend:* A graphical representation of the amount of sales over the perion of time.
 
 *Profit MoM:* This shows month over month percentage fluctations in the profit margin.
 
@@ -34,7 +34,7 @@ The dashboard provides clear visibility into sales trends, identifies top-perfor
 
 *Regional Analysis:* highlights areas of strong and weak performance.
 
-*% Profit Differencial:* Shows the fluctuations in monthly profit versus the previous year, aiding decision making regarding forcast profit and sales in the calender year.
+*% Profit Differencial:* Shows the fluctuations in monthly profit versus the previous year, aiding decision making regarding forcast for profit and sales in the calender year.
 
 **Conclusion:** This dashboard enables stakeholders to quickly assess overall business performance, identify growth opportunities, underperforming areas, and make informed decisions based on real-time data exploration.
 
