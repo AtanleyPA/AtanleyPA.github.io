@@ -87,4 +87,88 @@ The dashboard provides clear visibility into sales trends, identifies top-perfor
 ![Girozoline](Girozoline.png)
 
 
+# Project 3
+
+**Title: Car Dealerlership**
+
+**Project Overview:**
+This project contains SQL queries used to analyze a car dealership dataset. The goal is to extract insights such as fuel trends, yearly inventory counts, and sales patterns.
+
+**Dataset:**
+The dataset includes the following fields: Name, Year, Selling Price, Kilometers Driven, Fuel Type, Seller Type, Transmission, Owner, Mileage, Engine, Max Power, Torque, Seats
+
+**SQL Skills Used:** 
+
+*Data Retrieval (SELECT):* Queried and extracted specific information from the database.
+
+*Data Aggregation (SUM, COUNT):* Calculated totals, such as sales and quantities, and counted records to analyze data trends.
+
+*Data Filtering (WHERE, BETWEEN, IN, AND):* Applied filters to select relevant data, including filtering by ranges and lists.
+
+*Data Source Specification (FROM):* Specified the tables used as data sources for retrieval
+
+
+**Technology used:** SQL Server
+
+**SQL Codes:** [Car Dealer SQL Analysis](https://github.com/AtanleyPA/AtanleyPA.github.io/blob/main/Car_Dealer_SQL_Analysis)
+
+**Key Insights:**
+
+*Fuel Trends* Petrol cars were specifically counted for the year 2020. This helps understand fuel preference in a given year.
+
+*Yearly Inventory Growth:* Car counts grouped by year reveal trends in inventory. Useful for identifying growth or decline over time.
+
+*High Inventory Years:* Some years recorded more than 100 cars which may indicate peak year business activity.
+
+*Recent Market Focus (2015–2023):* Filtering data between 2015 and 2023 highlights modern car trends which helps focus on relevant and recent inventory.
+
+*Detailed Dataset Review:* Full dataset extraction for selected years allows: Deeper analysis, Feature comparison, Analyze price trends over time, Compare fuel types by year and identification of most common car brands.
+
+**Conclusion:** This analysis provides a clear view of our dealership’s inventory trends, fuel demand, and recent market activity. The insights can help us stock the right vehicles, focus on high-demand segments, and make smarter sales decisions. Even with simple SQL analysis, we gain practical direction to improve inventory planning and better meet customer needs.
+
+
+
+# Project 4
+
+**Title: Football Player SQL Analysis**
+
+**Project Description:** This project uses SQL to analyze football player data, focusing on performance, player attributes, and trends across the dataset.
+
+**Dataset:**
+
+The dataset includes key player information such as: Player Name, Age, Nationality, Club, Position, Overall Rating, Potential, Value, Wage
+
+**Objectives:** Analyze player ratings and potential, Identify top-performing players, Explore age and performance trends, Evaluate player market value.
+
+**SQL Skills Used:** 
+
+*Data Retrieval (SELECT):* Queried and extracted specific information from the database.
+
+*Data Aggregation (SUM, COUNT):* Calculated totals, such as sales and quantities, and counted records to analyze data trends.
+
+*Data Filtering (WHERE, BETWEEN, IN, AND):* Applied filters to select relevant data, including filtering by ranges and lists.
+
+*Data Source Specification (FROM):* Specified the tables used as data sources for retrieval
+
+*Common Table Expression(CTE):* Used to simplify complex queries by making them more readable and reusable.
+
+
+**Technology used:** SQL Server
+
+**SQL Codes:** [Football Player SQL Analysis](https://github.com/AtanleyPA/AtanleyPA.github.io/blob/main/Football_Player_SQL_Analysis)
+
+**Key Insights:**
+
+*Top Player Performance:* The highest-rated players represent elite talent. These players typically also have high market value.
+
+*Position-Based Strength:* Certain positions show higher average ratings. This may reflect demand or importance in gameplay.
+
+*Nationality Distribution:* Some countries produce significantly more players indicating strong football development systems.
+
+*Market Value Trends:* Player value is closely linked to performance and potential. High-value players often command higher wages.
+
+**Conclusion:**
+
+This analysis helps identify top talent, emerging players, and market trends within the football dataset. The insights can support scouting decisions, squad building, and investment strategies by focusing on high-potential players and high-value positions.
+
 
