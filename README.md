@@ -89,7 +89,7 @@ The dashboard provides clear visibility into sales trends, identifies top-perfor
 
 # Project 3
 
-**Title: Car Dealerlership**
+**Title: Car Dealership**
 
 **Project Overview:**
 This project contains SQL queries used to analyze a car dealership dataset. The goal is to extract insights such as fuel trends, yearly inventory counts, and sales patterns.
