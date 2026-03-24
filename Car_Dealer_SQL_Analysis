@@ -1,0 +1,56 @@
+--1 How many petrol car would there be in the year 2020
+
+SELECT count (*) as [Petrol Car]
+FROM [dbo].[Car dealer]
+WHERE [fuel] = 'Petrol'
+and [year] = '2020'
+
+
+--2	Count all the cars by all years
+
+SELECT [year]
+        ,count (*) as Count
+FROM [dbo].[Car dealer]
+group by [year]
+ORDER BY [year]
+
+
+--3	Identify the years where there were more than 100 cars. 
+SELECT [year]
+        ,COUNT (*) AS [More than 100 cars]
+FROM [dbo].[Car dealer]
+group by [year]
+having COUNT (*) > 100
+
+
+--4	Make a complete count of all cars between 2015 and 2023
+
+SELECT [year]
+        ,COUNT (*) AS [More than 100 cars]
+FROM [dbo].[Car dealer]
+group by [year]
+having [year]
+between 2015 and 2023
+order by [year]
+
+
+--5	Make a complete detail of all cars between 2015 and 2023
+
+SELECT *
+        ,COUNT (*) AS [More than 100 cars]
+FROM [dbo].[Car dealer]
+Group by [Name]
+      ,[year]
+      ,[selling_price]
+      ,[km_driven]
+      ,[fuel]
+      ,[seller_type]
+      ,[transmission]
+      ,[owner]
+      ,[mileage]
+      ,[engine]
+      ,[max_power]
+      ,[torque]
+      ,[seats]
+Having [year] between 2015 and 2023
+Order by [year]
