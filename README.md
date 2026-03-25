@@ -217,3 +217,68 @@ This analysis helps the organizations: Improve workplace safety policies, alloca
 
 **Conclusion:** The findings highlight the importance of data-driven decision-making in improving workplace safety, enabling organizations to take proactive measures, reduce risks, and enhance overall operational efficiency.
 
+
+# Project 6
+
+**Title: Sales & Customer Relationship Intelligence System (SQL Analysis)**
+
+
+
+**Project Overview:** The Sales & Customer Relationship Intelligence System is a comprehensive SQL-based analytics project explores relationships between salespersons, customers, and orders.
+
+This project focuses on extracting meaningful business insights from relational data by applying joins, filtering, aggregation, and advanced SQL querying techniques.
+
+It demonstrates real-world problem-solving skills relevant to data analytics, business intelligence, and database management roles.
+
+
+**Dataset:** The project uses three relational tables:
+
+1. *Salesman Table:* Salesman_id, Name, City, Commission
+
+2. *Customer Table:* Customer_ID, Customer_Name, City, Grade, Salesman_ID
+
+3. *Orders Table:* Order Number, Order Date, Purchase Amount, Customer ID, Salesman_id
+
+
+**Objectives:** Analyze relationships between salespersons and customers, rack and evaluate order transactions, identify high-value customers and sales trends, and generate structured reports for business decision-making
+
+**Key SQL Concepts Applied**
+
+INNER JOIN, LEFT JOIN, FULL OUTER JOIN, CROSS JOIN (Cartesian Product)
+
+Filtering with WHERE conditions
+
+Sorting and grouping
+
+Multi-table relational queries
+
+**Skills Demonstrated:** Advanced SQL query writing, data relationships & joins, business logic implementation, data exploration & reporting, problem-olving with real scenarios
+
+**Technology used:** SQL Server
+
+**SQL Codes:** [Sales & Customer Relationship Intelligence System (SQL Analysis)](https://github.com/AtanleyPA/AtanleyPA.github.io/blob/main/ales%20%26%20Customer%20Relationship%20Intelligence%20System%20(SQL%20Analysis))
+
+**Key Analysis Performed**
+ 
+*Customer & Salesperson Relationship Analysis:* Identified customers and salespersons in the same city, matched customers to their assigned sales representatives.
+
+*Order Insights:* Filtered orders within specific purchase ranges, generated detailed order reports including customer and salesperson data.
+
+*Performance Evaluation:* Identified high-commission salespersons (>12%), evaluated customer grades and purchasing behavior
+
+*Advanced Joins & Reporting:* Built comprehensive reports combining all three tables, ensured inclusion of customers without orders and salespersons without customers.
+
+*Cartesian Product Scenarios:* Explored all possible combinations of salespersons and customers, applied conditions to simulate business scenarios.
+
+**Key Findings**
+
+*Strong relationships exist between customer location and salesperson assignment*
+
+*High commission salespersons can be identified for performance evaluation*
+
+*Some customers may not have placed orders, indicating potential sales gaps*
+
+*Data relationships highlight opportunities for improving customer engagement*
+
+
+**Conclusion:** This project showcases the practical application of SQL in analyzing relational business data. By combining multiple tables and applying structured queries, it delivers meaningful insights into customer behavior, sales performance, and operational relationships. 
