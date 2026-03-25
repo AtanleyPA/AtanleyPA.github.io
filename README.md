@@ -136,9 +136,9 @@ The dataset includes the following fields: Name, Year, Selling Price, Kilometers
 
 **Dataset:**
 
-The dataset includes key player information such as: Player Name, Age, Nationality, Club, Position, Overall Rating, Potential, Value, Wage
+The dataset includes key player information such as: Player Name, Age, College, Team, Position, Experience, Weight, Height, Year
 
-**Objectives:** Analyze player ratings and potential, Identify top-performing players, Explore age and performance trends, Evaluate player market value.
+**Objectives:** Analyze player ratings and potential, Explore age and performance trends, Evaluate overall experience level of the team, Evaluate the team net-worth.
 
 **SQL Skills Used:** 
 
@@ -163,12 +163,57 @@ The dataset includes key player information such as: Player Name, Age, Nationali
 
 *Position-Based Strength:* Certain positions show higher average ratings. This may reflect demand or importance in gameplay.
 
-*Nationality Distribution:* Some countries produce significantly more players indicating strong football development systems.
+*College Distribution:* Some college produce significantly more players indicating strong football development systems.
 
-*Market Value Trends:* Player value is closely linked to performance and potential. High-value players often command higher wages.
+*Market Value Trends:* Player value is closely linked to performance and potential. High-value players based on experience rating often command higher wages.
 
 **Conclusion:**
 
 This analysis helps identify top talent, emerging players, and market trends within the football dataset. The insights can support scouting decisions, squad building, and investment strategies by focusing on high-potential players and high-value positions.
 
+
+# Project 5
+
+**Title: Work Saftey SQL Analysis**
+
+**Project Overview:**  This project analyzes workplace safety data using SQL to uncover trends, risks, and actionable insights that can help organizations improve employee safety and reduce incidents.
+
+It demonstrates data cleaning, querying, and analytical thinking using SQL, making it ideal for data analyst and business intelligence roles.
+
+**Dataset Description**
+
+The dataset contains workplace safety records, including: Incident ID, Date of incident, Location, Type of injury, Gender, Age Group, Injury Location, details and Department.
+
+**Objective:** Analyze workplace incident data, identify high-risk areas and patterns, and provide insights for decision-making
+
+
+**SQL Skills Used:** 
+
+*Data Retrieval (SELECT):* Queried and extracted specific information from the database.
+
+*Data Aggregation (SUM, COUNT, MAX):* Calculated totals, such as sales and quantities, and counted records to analyze data trends.
+
+*Data Source Specification (FROM):* Specified the tables used as data sources for retrieval
+
+*Common Table Expression(CTE):* Used to simplify complex queries by making them more readable and reusable.
+
+
+**Technology used:** SQL Server
+
+**SQL Codes:** [Work Safety SQL Analysis](https://github.com/AtanleyPA/AtanleyPA.github.io/blob/main/Workplace%20Safety%20Data%20Analysis%20(SQL))
+
+**Key Insights:**
+*Certain locations consistently report higher incidents*
+
+*Specific departments have increased safety risks*
+
+*Incident frequency varies by time (season/month trends)*
+
+*High severity cases can be isolated for targeted action*
+
+**Business Impact**
+
+This analysis helps the organizations: Improve workplace safety policies, allocate resources to high-risk areas, reduce injury rates, and ensure compliance with safety regulations.
+
+**Conclusion:** The findings highlight the importance of data-driven decision-making in improving workplace safety, enabling organizations to take proactive measures, reduce risks, and enhance overall operational efficiency.
 
