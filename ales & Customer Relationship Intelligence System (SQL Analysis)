@@ -1,0 +1,276 @@
+SELECT [Salesman_id]
+      ,[Name]
+      ,[city]
+      ,[commission]
+  FROM [dbo].[Salesman$]
+
+
+SELECT [Salesman_id]
+      ,[Name]
+      ,[city]
+      ,[commission]
+  FROM [dbo].[Salesman$]
+
+
+--1 Identify salesperson and customer who reside in the same city. Return Salesman, cust_name and city
+
+Select S.[Name]
+      ,C.[Customer_Name]
+      ,C.[City]
+FROM [dbo].[Salesman$] AS S
+INNER JOIN [dbo].[Customer$] AS C
+ON S.[Salesman_id] = C.[Salesman_id]
+AND S.[city] = C.[City]
+
+
+--2	Identify those orders where the order amount exists between 500 and 2000. Return ord_no, purch_amt, cust_name, city.
+
+SELECT O.[Order Number]
+      ,O.[Purchase_Amount]
+      ,C.[Customer_Name]
+      ,C.[City]
+
+FROM[dbo].[Customer$] AS C
+JOIN [dbo].[Order$] AS O
+ON C.[Customer_ID] = O.[Customer ID]
+WHERE O.[Purchase_Amount] 
+BETWEEN 500 AND 2000
+
+
+--3	Identify salesperson(s) and the customer(s) he represents. Return Customer Name, city, Salesman, commission.
+
+SELECT C.[Customer_Name]
+      ,C.[City]
+      ,S.[Name] as SalesPerson_Name
+      ,S.[commission]
+  FROM [dbo].[Customer$] as C
+  inner join [dbo].[Salesman$] as S
+  ON C.[City] = S.[city]
+
+
+--4 Identify salespeople who received commissions of more than 12 percent from the company.
+     Return Customer Name, customer city, Salesman, commission.  
+
+SELECT C.[Customer_Name]
+      ,C.[City]
+      ,S.[Name]
+      ,S.[commission]
+  FROM [dbo].[Customer$] as C
+  full outer join [dbo].[Salesman$] as S
+  ON C.[City] = S.[city]
+  WHERE [commission] > 0.12
+
+
+--5	Locate those salespeople who do not live in the same city where their customers live and have received a commission 
+    of more than 12% from the company. Return Customer Name, customer city, Salesman, salesman city, commission.  
+
+SELECT C.[Customer_Name]
+      ,C.[City]
+      ,S.[Name]
+      ,S.[city]
+      ,S.[commission]
+FROM [dbo].[Customer$] AS C
+FULL OUTER JOIN[dbo].[Salesman$] AS S
+ON C.[Salesman_ID] = S.[Salesman_ID]
+WHERE C.[City] != S.[city]
+AND [commission] > 0.12
+
+     
+--6	Details of an order. Return ord_no, ord_date, purch_amt, Customer Name, grade, Salesman, commission
+
+SELECT O.[Order Number]
+      ,O.[Order Date]
+      ,O.[Purchase_Amount]
+      ,C.[Customer_Name]
+      ,C.[Grade]
+      ,S.[Name]
+      ,S.[commission]
+FROM [dbo].[Order$] AS O
+JOIN [dbo].[Customer$] AS C 
+ON O.[Salesman_id] = C.[Salesman_id]
+JOIN[dbo].[Salesman$] AS S
+ON  C.[Salesman_id] =S.[Salesman_id]
+
+
+--7	Join the tables salesman, customer and orders so that the same column of each table appears once and only the 
+     relational rows are returned. 
+
+SELECT O.[Order Number]
+      ,O.[Purchase_Amount]
+      ,O.[Order Date]
+      ,O.[Customer ID]
+      ,O.[Salesman_id]
+      ,C.[Customer_Name]
+      ,C.[City]
+      ,C.[Grade]
+      ,C.[Salesman_ID]
+      ,S.[Name]
+      ,S.[commission]
+FROM[dbo].[Order$] AS O
+inner JOIN [dbo].[Customer$] AS C
+ON O.[Salesman_id] = C.[Salesman_id]
+ inner JOIN[dbo].[Salesman$] AS S
+ON C.[Salesman_id] =S.[Salesman_id]
+
+
+--8	Display the customer name, customer city, grade, salesman, salesman city. The results should be sorted by ascending customer_id.
+
+SELECT C.[Customer_Name]
+      ,C.[City] [Customers City]
+      ,C.[Grade]
+      ,S.[Name] AS [Salesman Name]
+      ,S.[city] as [Salesman City]
+FROM [dbo].[Customer$] AS C
+JOIN[dbo].[Salesman$] AS S
+ON C.[Salesman_id] =S.[Salesman_id]
+order by [Customer_ID] asc
+
+
+--9	Find those customers with a grade less than 300. Return cust_name, customer city, grade, Salesman, salesmancity.
+    The result should be ordered by ascending customer_id.
+
+SELECT C.[Customer_Name]
+      ,C.[City] [Customers City]
+      ,C.[Grade]
+      ,S.[Name] AS [Salesman Name]
+      ,S.[city] as [Salesman City]
+FROM [dbo].[Customer$] AS C
+JOIN[dbo].[Salesman$] AS S
+ON C.[Salesman_id] =S.[Salesman_id]
+where C.[Grade] < 300
+order by [Customer_ID] desc
+
+
+--10 Make a report with customer name, city, order number, order date, and order amount in ascending order 
+     according to the order date to determine whether any of the existing customers have placed an order or not.
+
+SELECT C.[Customer_Name]
+      ,C.[City]
+      ,O.[Order Number]
+      ,O.[Order Date]
+      ,O.[Purchase_Amount]
+FROM [dbo].[Customer$] AS C
+Left JOIN [dbo].[Order$] AS O
+ON C.[Salesman_id] =O.[Salesman_id]
+ORDER BY[Order Date]
+
+
+--11 Generate a report with customer name, city, order number, order date, order amount, salesperson name, and commission to determine 
+      if any of the existing customers have not placed orders or if they have placed orders through their salesman or by themselves.
+
+SELECT C.[Customer_Name]
+      ,C.[City]
+      ,O.[Order Number]
+      ,O.[Order Date]
+      ,O.[Purchase_Amount]
+      ,S.[Name] AS [SalesPerson's Name]
+      ,S.[commission]
+FROM[dbo].[Customer$] AS C
+LEFT JOIN [dbo].[Order$] AS O
+ON C.[Salesman_id] =O.[Salesman_id]
+LEFT JOIN [dbo].[Salesman$] AS S
+ON C.[Salesman_id] =S.[Salesman_id]
+
+
+--12 Generate a list in ascending order of salespersons who work either for one or more customers or have not yet 
+    joined any of the customers.
+
+SELECT S.[Name] AS [SalesPerson's Name]
+FROM [dbo].[Customer$] AS C 
+Left JOIN [dbo].[Salesman$] AS S
+ON C.[Salesman_id] = S.[Salesman_id]
+order by S.[Name]  asc
+
+
+--13 List all salespersons along with customer name, city, grade, order number, date, and amount.
+
+ SELECT S.[Name] AS Sales_Persons_Name
+       ,C.[Customer_Name]
+       ,C.[City]
+      ,C.[Grade]
+      ,O.[Order Number]
+      ,O.[Order Date]
+      ,O.[Purchase_Amount]
+FROM [dbo].[Customer$] AS C
+LEFT JOIN [dbo].[Order$] AS O
+ON C.[Salesman_id] =O.[Salesman_id]
+LEFT JOIN [dbo].[Salesman$] AS S
+ON O.[Salesman_id] = S.[Salesman_id]
+
+
+--14 Make a list for the salesmen who either work for one or more customers or yet to join any of the customer.
+     The customer may have placed, either one or more orders on or above order amount 2000 and must have a grade,
+    or he may not have placed any order to the associated supplier.
+
+SELECT S.[Name] AS [SalesPerson's Name]
+FROM [dbo].[Salesman$] AS S
+LEFT JOIN [dbo].[Customer$] AS C
+ON C.[Salesman_id] =S.[Salesman_id]
+LEFT JOIN [dbo].[Order$] AS O
+ON C.[Salesman_id] =O.[Salesman_id]
+WHERE O.[Purchase_Amount] >= 2000
+AND [Grade] IS NOT NULL
+
+
+--15 Customers from the existing list who put one or more orders, or which orders have been placed by the customer who is not on the list,
+     create a report containing the customer name, city, order number, order date, and purchase amount
+
+SELECT C.[Customer_Name]
+      ,C.[City]
+      ,O.[Order Number]
+      ,O.[Order Date]
+      ,O.[Purchase_Amount]
+FROM[dbo].[Customer$] AS C
+LEFT JOIN [dbo].[Order$] AS O
+ON C.[Salesman_id] =O.[Salesman_id]
+
+
+--16 Generate a report with the customer name, city, order no. order date, purchase amount for only those customers on the list 
+     who must have a grade and placed one or more orders or which order(s) have been placed by the customer who neither is 
+     on the list nor has a grade.
+
+SELECT C.[Customer_Name]
+      ,C.[City]
+      ,O.[Order Number]
+      ,O.[Order Date]
+      ,O.[Purchase_Amount]
+FROM[dbo].[Customer$] AS C
+LEFT JOIN [dbo].[Order$] AS O
+ON C.[Salesman_id] =O.[Salesman_id]
+WHERE [Grade] is not NULL
+
+
+--17 Combine each row of the salesman table with each row of the customer table
+
+SELECT*
+FROM[dbo].[Salesman$] AS S
+CROSS JOIN [dbo].[Customer$] AS C
+
+
+--18 A Cartesian product between salesperson and customer, 
+     i.e. each salesperson will appear for all customers and vice versa for that salesperson who belongs to that city.
+
+SELECT*
+FROM[dbo].[Salesman$] AS S
+CROSS JOIN [dbo].[Customer$] AS C
+WHERE S.[City] = C.[City]
+
+
+--19 Create a Cartesian product between salesperson and customer, i.e. each salesperson will appear for every customer and
+      vice versa for those salesmen who belong to a city and customers who require a grade.
+
+SELECT*
+FROM[dbo].[Salesman$] AS S
+CROSS JOIN [dbo].[Customer$] AS C
+WHERE S.[City] IS NOT NULL
+AND [Grade] IS NOT NULL
+
+
+--20 Make a Cartesian product between salesman and customer i.e. each salesman will appear for all customers and vice versa 
+     for those salesmen who must belong to a city which is not the same as his customer and the customers should have their own grade.
+
+SELECT*
+FROM[dbo].[Salesman$] AS S
+CROSS JOIN [dbo].[Customer$] AS C
+WHERE S.[City] <> C.[City]
+AND [Grade] IS NOT NULL
