@@ -14,7 +14,7 @@ SELECT [Date]
       ,[Year]
   FROM [dbo].['Workplace Safety Data$']
 
---1	How many incidents occurred at each plant?
+--1	Frequency of incidents at each plant
 
 SELECT PLANT
         , COUNT(PLANT) AS [Number of Incidents]
@@ -22,7 +22,7 @@ SELECT PLANT
 GROUP BY PLANT
 
 
---2	What is the total incident cost per department?
+--2	Total incident cost per department
 
 SELECT [Department]
         ,SUM([Incident Cost]) AS [Departmental Cost]
@@ -30,7 +30,7 @@ From [dbo].['Workplace Safety Data$']
 Group by [Department]
 
 
---3	Which incident type resulted in the highest total days lost?
+--3	Incident type with the highest total days lost
 
 SELECT [Incident Type]
         ,sum([Days Lost]) AS Highest_Lost_Day
@@ -38,14 +38,14 @@ From [dbo].['Workplace Safety Data$']
 Group by [Incident Type]
 
 
---4	What is the distribution of incident types by shift?
+--4	Distribution of incident types by shift
 
 Select [Shift]
         ,[Incident Type]
 From [dbo].['Workplace Safety Data$']
 
 
---5	What is the average incident cost for each injury location?
+--5	Average incident cost for each injury location
 
 Select  [Injury Location]
         ,Avg([Incident Cost]) as Average_Cost
@@ -53,7 +53,7 @@ From [dbo].['Workplace Safety Data$']
 Group by [Injury Location]
 
 
---6	Which age group has the highest number of incidents?
+--6	Age group With highest number of incidents
 
 Select [Age Group]
         ,count([Age Group])as [Number of Incident]
@@ -61,7 +61,7 @@ From [dbo].['Workplace Safety Data$']
 group by [Age Group]
 
 
---7	How many incidents were reported as 'Lost Time' by each plant?
+--7	Reported incidents as 'Lost Time' by each plant
 
 Select plant
         ,COUNT([Report Type]) as [Lost Time]
@@ -70,7 +70,7 @@ where [Report Type] = 'Lost Time'
 group by Plant
 
 
---8	Which department had the highest number of 'Crush & Pinch' incidents?
+--8	Department with the highest number of 'Crush & Pinch' incidents
 
 Select [Department]
         ,Count([Incident Type]) as [count of Incidence]
@@ -79,7 +79,7 @@ Where [Incident Type] = 'Crush & Pinch'
 Group by [Department]
 
 
---9	Which plants reported the most "Near Miss" incidents?
+--9	 Plants reported with the most "Near Miss" incidents
 With Dummy as
 (
 Select [Plant]
@@ -94,7 +94,7 @@ From Dummy
 order by [Near_Miss] desc
 
 
---10 What is the total number of incidents by year and month?
+--10 Total number of incidents by year and month
 
 Select [Year]
         ,[Month]
@@ -105,7 +105,7 @@ Group by [Year]
 order by [Year]
         
 
---11 Which gender has the most reported incidents?
+--11 Gender with the most reported incidents
 
 Select [Gender]
         ,count([Report Type]) As Number_Incidence
@@ -114,7 +114,7 @@ Group by [Gender]
 
 
 
---12 What is the total cost of incidents per year?
+--12 The total cost of incidents per year
 
 Select [Year]
         ,Sum([Incident Cost]) as [Yearly Cost]
@@ -122,7 +122,7 @@ From [dbo].['Workplace Safety Data$']
 Group by [Year]
 
 
---13 Which incident resulted in the highest cost?
+--13 Incident with the highest cost
 
 with dataset as
 (
@@ -136,7 +136,7 @@ From dataset
 Order by [Yearly Cost] Desc
 
 
---14 What is the total cost of incidents for each report type?
+--14 Total cost of incidents for each report type
 
 Select [Report Type]
         ,Sum([Incident Cost]) as Cost
@@ -144,14 +144,14 @@ From[dbo].['Workplace Safety Data$']
 Group by [Report Type]
 
 
---15 Which departments had incidents with more than 2 days lost?
+--15 Departments with incidents having more than 2 days lost
 
 Select [Department]
 From [dbo].['Workplace Safety Data$']
 Where [Days Lost] > 2
 
 
---16 What is the average number of days lost per incident type?
+--16 The average number of days lost per incident type
 
 Select [Incident Type]
         ,Avg([Days Lost]) as Avg_Days_Lost
@@ -159,7 +159,7 @@ From [dbo].['Workplace Safety Data$']
 Group by [Incident Type]
 
 
---17 What is the distribution of incidents by shift (Day, Afternoon, Night)?
+--17 Distribution of incidents by shift (Day, Afternoon, Night)
 
 Select [Shift]
         ,[Incident Type]
@@ -169,7 +169,7 @@ group by  [Shift]
         ,[Incident Type]
 
 
---18 Which months have the highest number of incidents?
+--18 Month with the highest number of incidents
 
 With Dummy As
 (
@@ -183,7 +183,7 @@ from Dummy
 order by [Month with Highest Occurence] desc
 
 
---19 What is the total cost of "Vehicle" related incidents?
+--19 Total cost of "Vehicle" related incidents
 
 Select [Incident Type]
        ,sum([Incident Cost]) as [Vehicle Related Incident]
@@ -192,7 +192,8 @@ where [Incident Type] = 'Vehicle'
 Group by [Incident Type]
 
 
---20 Which age group is most affected by "Falling Object" incidents?
+--20 Mostly affected age group with "Falling Object" incidents
+
 with Dummy as
 (
 Select [Age Group]
@@ -203,3 +204,4 @@ Group by [Age Group]
 )
 Select Top(1)*
 From Dummy
+
