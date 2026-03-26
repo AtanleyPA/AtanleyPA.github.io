@@ -2,15 +2,15 @@
 
 # Project 1
 
-**Title:** [BMW Global Sales DashBoard 2018-2025.pbix](https://github.com/AtanleyPA/AtanleyPA.github.io/blob/main/BMW%20Global%20Sales%20DashBoard%202018-2025.pbix)
+**Title:** [BMW Global Sales Dashboard 2018-2025.pbix](https://github.com/AtanleyPA/AtanleyPA.github.io/blob/main/BMW%20Global%20Sales%20DashBoard%202018-2025.pbix)
 
 **Tool Used:**  Power BI, Power Query, DAX, Excel
 
-**Techniques:** Data cleaning, data modeling, interactive dashboard design, KPI development, and data visualization
+**Techniques:** Data cleaning, data modeling, interactive dashboard design, KPI development, and data visualization.
 
 **Project Description:** This project involves the design of an interactive Power BI dashboard to evaluate BMW’s global sales performance from 2018 to 2025. It converts raw sales data into meaningful insights, allowing users to analyze trends across regions, time periods, and vehicle models.
 
-The dashboard includes key metrics such as total revenue, units sold, and year-over-year growth, supported by visuals like maps, bar charts, and trend analyses. Interactive slicers enable users to filter and explore the data for deeper business insights.
+The dashboard includes key metrics such as total revenue, units sold, and year-over-year growth, supported by visuals like map, bar charts, and trend analyses. Interactive slicers enable users to filter and explore the data for deeper business insights.
 
 The project highlights skills in data transformation using Power Query, data modeling, DAX calculations, and the creation of clear, user-friendly dashboards for business analysis.
 
@@ -304,6 +304,20 @@ Multi-table relational queries
 *Well-being:* Stress Score, Happiness Score
 
 *Digital Usage:* Stories Viewed Per Day
+
+
+*KPI Cards:* Summarize key metrics such as average Instagram usage, sleep hours, happiness, and stress, providing a quick overview of overall user lifestyle and behavior.
+
+*Relationship Status vs Sleeping Hours:* Shows how sleep duration varies across relationship statuses, highlighting differences in rest patterns among singles, married, and other groups.
+
+*Age Group vs Stories Viewed:* Displays Instagram usage across age groups.
+
+*Diet vs Happiness & Exercise:* Compares diet quality and exercise levels with happiness.
+
+*Stories Viewed vs Social Events:* Illustrates relationship between online activity and real-life social interaction.
+
+*Happiness vs Employment Status & Gender:* Analyzes how happiness varies by employment status and gender, showing differences in well-being across demographic groups.
+
 
 **Key Insight**
 
