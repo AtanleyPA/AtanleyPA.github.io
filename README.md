@@ -143,7 +143,7 @@ The dashboard provides insights into how factors like age, employment status, an
 
 
 **Dashboard Overview**
-![Assesement of instagram](Assesement_of_instagram)
+![Assesement of instagram](https://github.com/AtanleyPA/AtanleyPA.github.io/blob/main/Assesement%20of%20instagram.png)
 
 
 
