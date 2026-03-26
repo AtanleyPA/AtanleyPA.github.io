@@ -25,6 +25,7 @@ The project highlights skills in data transformation using Power Query, data mod
 *Monthly Revenue & YoY %:* Provides detailed numerical breakdown which allows precise comparison of monthly revenue and growth rate.
 
 **Key Insight:**
+
 *Regional Revenue Distribution:* China generate the highest share of total revenue, USA, Europe and Rest of World contribute moderately, indicating potential growth markets.
 
 *Consistent Revenue Performance:* Monthly revenue remains relatively stable, averaging over £120M+ indicating strong and consistent demand across the period.
@@ -50,7 +51,7 @@ The project highlights skills in data transformation using Power Query, data mod
 
 **Tools Used:** Microsoft Excel (Power Query, PivotTables, PivotCharts, Slicers and Timeline Filter)
 
-**Project Description:** An interactive Excel dashboard developed to analyze key sales metrics using a structured dataset. It leverages PivotTables, PivotCharts, slicers, and a timeline to enable dynamic exploration of performance across time, product categories, and regions.
+**Project Description:** This is an interactive Excel dashboard developed to analyze key sales metrics using a structured dataset. It leverages PivotTables, PivotCharts, slicers, and a timeline to enable dynamic exploration of performance across time, product categories, and regions.
 The dashboard provides clear visibility into sales trends, identifies top-performing categories, and highlights regional performance patterns, supporting quick and informed decision-making.
 
 *Product Sales Performance:* Highlights sales performace of each product.
@@ -87,44 +88,62 @@ The dashboard provides clear visibility into sales trends, identifies top-perfor
 ![Girozoline](Girozoline.png)
 
 
+
 # Project 3
 
-**Title: Car Dealership**
+**Title:** [Instagram Usage vs Lifestyle Dashboard](https://github.com/AtanleyPA/AtanleyPA.github.io/blob/main/Assesement%20of%20Instagram%20Usage%20on%20Life%20style.xlsx)
 
-**Project Overview:**
-This project contains SQL queries used to analyze a car dealership dataset. The goal is to extract insights such as fuel trends, yearly inventory counts, and sales patterns.
+**Tools Used:** Microsoft Excel (Power Query, PivotTables, PivotCharts, Slicers and Timeline Filter)
 
-**Dataset:**
-The dataset includes the following fields: Name, Year, Selling Price, Kilometers Driven, Fuel Type, Seller Type, Transmission, Owner, Mileage, Engine, Max Power, Torque, Seats
+**Project Overview:** The goal of this project is to explore relationships between social media consumption (Instagram) and well-being indicators across different demographics. 
 
-**SQL Skills Used:** 
+The dashboard provides insights into how factors like age, employment status, and location influence Instagram usage and overall lifestyle.
 
-*Data Retrieval (SELECT):* Queried and extracted specific information from the database.
+**Dataset Features:** The dataset includes key variables such as:
 
-*Data Aggregation (SUM, COUNT):* Calculated totals, such as sales and quantities, and counted records to analyze data trends.
+*Demographics:* Age, Gender, Country, Urban/Rural
 
-*Data Filtering (WHERE, BETWEEN, IN, AND):* Applied filters to select relevant data, including filtering by ranges and lists.
+*Lifestyle:* Sleep Hours, Exercise, Diet Quality, Smoking, Alcohol
 
-*Data Source Specification (FROM):* Specified the tables used as data sources for retrieval
+*Social Behavior:* Social Events, Hobbies, Books Read
+
+*Well-being:* Stress Score, Happiness Score
+
+*Digital Usage:* Stories Viewed Per Day
 
 
-**Technology used:** SQL Server
+*KPI Cards:* Summarize key metrics such as average Instagram usage, sleep hours, happiness, and stress, providing a quick overview of overall user lifestyle and behavior.
 
-**SQL Codes:** [Car Dealer SQL Analysis](https://github.com/AtanleyPA/AtanleyPA.github.io/blob/main/Car_Dealer_SQL_Analysis)
+*Relationship Status vs Sleeping Hours:* Shows how sleep duration varies across relationship statuses, highlighting differences in rest patterns among singles, married, and other groups.
 
-**Key Insights:**
+*Age Group vs Stories Viewed:* Displays Instagram usage across age groups.
 
-*Fuel Trends* Petrol cars were specifically counted for the year 2020. This helps understand fuel preference in a given year.
+*Diet vs Happiness & Exercise:* Compares diet quality and exercise levels with happiness.
 
-*Yearly Inventory Growth:* Car counts grouped by year reveal trends in inventory. Useful for identifying growth or decline over time.
+*Stories Viewed vs Social Events:* Illustrates relationship between online activity and real-life social interaction.
 
-*High Inventory Years:* Some years recorded more than 100 cars which may indicate peak year business activity.
+*Happiness vs Employment Status & Gender:* Analyzes how happiness varies by employment status and gender, showing differences in well-being across demographic groups.
 
-*Recent Market Focus (2015–2023):* Filtering data between 2015 and 2023 highlights modern car trends which helps focus on relevant and recent inventory.
 
-*Detailed Dataset Review:* Full dataset extraction for selected years allows: Deeper analysis, Feature comparison, Analyze price trends over time, Compare fuel types by year and identification of most common car brands.
+**Key Insight**
 
-**Conclusion:** This analysis provides a clear view of our dealership’s inventory trends, fuel demand, and recent market activity. The insights can help us stock the right vehicles, focus on high-demand segments, and make smarter sales decisions. Even with simple SQL analysis, we gain practical direction to improve inventory planning and better meet customer needs.
+1. *Higher Instagram usage is associated with lower sleep duration.*
+
+2. *Younger age groups are the most active Instagram users.*
+   
+3. *Happiness increases with better lifestyle habits (exercise, diet).*
+
+4. *More real-life social interaction correlates with lower screen time.*
+
+5. *Urban users show higher Instagram activity compared to rural users.*
+
+
+
+**Conclusion:** This project demonstrates how data visualization and storytelling can uncover meaningful patterns between digital behavior and real-world lifestyle outcomes.
+
+
+**Dashboard Overview**
+![Assesement of instagram](https://github.com/AtanleyPA/AtanleyPA.github.io/blob/main/Assesement%20of%20instagram.png)
 
 
 
@@ -134,9 +153,7 @@ The dataset includes the following fields: Name, Year, Selling Price, Kilometers
 
 **Project Description:** This project uses SQL to analyze football player data, focusing on performance, player attributes, and trends across the dataset.
 
-**Dataset:**
-
-The dataset includes key player information such as: Player Name, Age, College, Team, Position, Experience, Weight, Height, Year
+**Dataset:** The dataset includes key player information such as: Player Name, Age, College, Team, Position, Experience, Weight, Height, Year
 
 **Objectives:** Analyze player ratings and potential, Explore age and performance trends, Evaluate overall experience level of the team, Evaluate the team net-worth.
 
@@ -180,9 +197,7 @@ This analysis helps identify top talent, emerging players, and market trends wit
 
 It demonstrates data cleaning, querying, and analytical thinking using SQL, making it ideal for data analyst and business intelligence roles.
 
-**Dataset Description**
-
-The dataset contains workplace safety records, including: Incident ID, Date of incident, Location, Type of injury, Gender, Age Group, Injury Location, details and Department.
+**Dataset Description:** The dataset contains workplace safety records, including: Incident ID, Date of incident, Location, Type of injury, Gender, Age Group, Injury Location, details and Department.
 
 **Objective:** Analyze workplace incident data, identify high-risk areas and patterns, and provide insights for decision-making
 
@@ -203,6 +218,7 @@ The dataset contains workplace safety records, including: Incident ID, Date of i
 **SQL Codes:** [Work Safety SQL Analysis](https://github.com/AtanleyPA/AtanleyPA.github.io/blob/main/Workplace%20Safety%20Data%20Analysis%20(SQL))
 
 **Key Insights:**
+
 *Certain locations consistently report higher incidents*
 
 *Specific departments have increased safety risks*
@@ -211,9 +227,7 @@ The dataset contains workplace safety records, including: Incident ID, Date of i
 
 *High severity cases can be isolated for targeted action*
 
-**Business Impact**
-
-This analysis helps the organizations: Improve workplace safety policies, allocate resources to high-risk areas, reduce injury rates, and ensure compliance with safety regulations.
+**Business Impact:** This analysis helps the organizations: Improve workplace safety policies, allocate resources to high-risk areas, reduce injury rates, and ensure compliance with safety regulations.
 
 **Conclusion:** The findings highlight the importance of data-driven decision-making in improving workplace safety, enabling organizations to take proactive measures, reduce risks, and enhance overall operational efficiency.
 
@@ -264,7 +278,7 @@ Multi-table relational queries
 
 *Order Insights:* Filtered orders within specific purchase ranges, generated detailed order reports including customer and salesperson data.
 
-*Performance Evaluation:* Identified high-commission salespersons (>12%), evaluated customer grades and purchasing behavior
+*Performance Evaluation:* Identified high-commission salespersons (>12%), evaluated customer grades and purchasing behavior.
 
 *Advanced Joins & Reporting:* Built comprehensive reports combining all three tables, ensured inclusion of customers without orders and salespersons without customers.
 
@@ -272,13 +286,13 @@ Multi-table relational queries
 
 **Key Findings**
 
-*Strong relationships exist between customer location and salesperson assignment*
+*Strong relationships exist between customer location and salesperson assignment.*
 
-*High commission salespersons can be identified for performance evaluation*
+*High commission salespersons can be identified for performance evaluation.*
 
-*Some customers may not have placed orders, indicating potential sales gaps*
+*Some customers may not have placed orders, indicating potential sales gaps.*
 
-*Data relationships highlight opportunities for improving customer engagement*
+*Data relationships highlight opportunities for improving customer engagement.*
 
 
 **Conclusion:** This project showcases the practical application of SQL in analyzing relational business data. By combining multiple tables and applying structured queries, it delivers meaningful insights into customer behavior, sales performance, and operational relationships. 
@@ -287,56 +301,41 @@ Multi-table relational queries
 
 # Project 7
 
-**Title:** [Instagram Usage vs Lifestyle Dashboard](https://github.com/AtanleyPA/AtanleyPA.github.io/blob/main/Assesement%20of%20Instagram%20Usage%20on%20Life%20style.xlsx)
+**Title: Car Dealership**
 
-**Tools Used:** Microsoft Excel (Power Query, PivotTables, PivotCharts, Slicers and Timeline Filter)
+**Project Overview:**
+This project contains SQL queries used to analyze a car dealership dataset. The goal is to extract insights such as fuel trends, yearly inventory counts, and sales patterns.
 
-**Project Overview:** The goal of this project is to explore relationships between social media consumption and well-being indicators across different demographics. The dashboard provides insights into how factors like age, employment status, and location influence Instagram usage and overall lifestyle.
+**Dataset:**
+The dataset includes the following fields: Name, Year, Selling Price, Kilometers Driven, Fuel Type, Seller Type, Transmission, Owner, Mileage, Engine, Max Power, Torque, Seats
 
-**Dataset Features:** The dataset includes key variables such as:
+**SQL Skills Used:** 
 
-*Demographics:* Age, Gender, Country, Urban/Rural
+*Data Retrieval (SELECT):* Queried and extracted specific information from the database.
 
-*Lifestyle:* Sleep Hours, Exercise, Diet Quality, Smoking, Alcohol
+*Data Aggregation (SUM, COUNT):* Calculated totals, such as sales and quantities, and counted records to analyze data trends.
 
-*Social Behavior:* Social Events, Hobbies, Books Read
+*Data Filtering (WHERE, BETWEEN, IN, AND):* Applied filters to select relevant data, including filtering by ranges and lists.
 
-*Well-being:* Stress Score, Happiness Score
-
-*Digital Usage:* Stories Viewed Per Day
-
-
-*KPI Cards:* Summarize key metrics such as average Instagram usage, sleep hours, happiness, and stress, providing a quick overview of overall user lifestyle and behavior.
-
-*Relationship Status vs Sleeping Hours:* Shows how sleep duration varies across relationship statuses, highlighting differences in rest patterns among singles, married, and other groups.
-
-*Age Group vs Stories Viewed:* Displays Instagram usage across age groups.
-
-*Diet vs Happiness & Exercise:* Compares diet quality and exercise levels with happiness.
-
-*Stories Viewed vs Social Events:* Illustrates relationship between online activity and real-life social interaction.
-
-*Happiness vs Employment Status & Gender:* Analyzes how happiness varies by employment status and gender, showing differences in well-being across demographic groups.
+*Data Source Specification (FROM):* Specified the tables used as data sources for retrieval
 
 
-**Key Insight**
+**Technology used:** SQL Server
 
-1. *Higher Instagram usage is associated with lower sleep duration*
+**SQL Codes:** [Car Dealer SQL Analysis](https://github.com/AtanleyPA/AtanleyPA.github.io/blob/main/Car_Dealer_SQL_Analysis)
 
-2. *Users with higher stress levels tend to consume more content*
-   
-3. *Happiness increases with better lifestyle habits (exercise, diet)*
+**Key Insights:**
 
-4. *More real-life social interaction correlates with lower screen time*
+*Fuel Trends:* Petrol cars were specifically counted for the year 2020. This helps understand fuel preference in a given year.
 
-5. *Urban users show higher Instagram activity compared to rural users*
+*Yearly Inventory Growth:* Car counts grouped by year reveal trends in inventory. Useful for identifying growth or decline over time.
 
-6. *Younger age groups are the most active Instagram users*
+*High Inventory Years:* Some years recorded more than 100 cars which may indicate peak year business activity.
 
-**Conclusion:** This project demonstrates how data visualization and storytelling can uncover meaningful patterns between digital behavior and real-world lifestyle outcomes.
+*Recent Market Focus (2015–2023):* Filtering data between 2015 and 2023 highlights modern car trends which helps focus on relevant and recent inventory.
 
+*Detailed Dataset Review:* Full dataset extraction for selected years allows: Deeper analysis, Feature comparison, Analyze price trends over time, Compare fuel types by year and identification of most common car brands.
 
-**Dashboard Overview**
-![Assesement of instagram](https://github.com/AtanleyPA/AtanleyPA.github.io/blob/main/Assesement%20of%20instagram.png)
+**Conclusion:** This analysis provides a clear view of our dealership’s inventory trends, fuel demand, and recent market activity. The insights can help us stock the right vehicles, focus on high-demand segments, and make smarter sales decisions. Even with simple SQL analysis, we gain practical direction to improve inventory planning and better meet customer needs.
 
 
