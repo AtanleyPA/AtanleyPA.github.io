@@ -282,3 +282,47 @@ Multi-table relational queries
 
 
 **Conclusion:** This project showcases the practical application of SQL in analyzing relational business data. By combining multiple tables and applying structured queries, it delivers meaningful insights into customer behavior, sales performance, and operational relationships. 
+
+
+
+# Project 7
+
+**Title:** [Instagram Usage vs Lifestyle Dashboard](https://github.com/AtanleyPA/AtanleyPA.github.io/blob/main/Assesement%20of%20Instagram%20Usage%20on%20Life%20style.xlsx)
+
+**Tools Used:** Microsoft Excel (Power Query, PivotTables, PivotCharts, Slicers and Timeline Filter)
+
+**Project Overview:** The goal of this project is to explore relationships between social media consumption and well-being indicators across different demographics. The dashboard provides insights into how factors like age, employment status, and location influence Instagram usage and overall lifestyle.
+
+**Dataset Features:** The dataset includes key variables such as:
+
+*Demographics:* Age, Gender, Country, Urban/Rural
+
+*Lifestyle:* Sleep Hours, Exercise, Diet Quality, Smoking, Alcohol
+
+*Social Behavior:* Social Events, Hobbies, Books Read
+
+*Well-being:* Stress Score, Happiness Score
+
+*Digital Usage:* Stories Viewed Per Day
+
+**Key Insight**
+
+1. *Higher Instagram usage is associated with lower sleep duration*
+
+2. *Users with higher stress levels tend to consume more content*
+   
+3. *Happiness increases with better lifestyle habits (exercise, diet)*
+
+4. *More real-life social interaction correlates with lower screen time*
+
+5. *Urban users show higher Instagram activity compared to rural users*
+
+6. *Younger age groups are the most active Instagram users*
+
+**Conclusion:** This project demonstrates how data visualization and storytelling can uncover meaningful patterns between digital behavior and real-world lifestyle outcomes.
+
+
+**Dashboard Overview**
+![Assesement of instagram](https://github.com/AtanleyPA/AtanleyPA.github.io/blob/main/Assesement%20of%20instagram.png)
+
+
