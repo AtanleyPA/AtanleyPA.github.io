@@ -143,7 +143,7 @@ The dashboard provides insights into how factors like age, employment status, an
 
 
 **Dashboard Overview**
-![Assesement of instagram](Assesement of instagram.png)
+![Assesement of instagram](Assesement_of_instagram)
 
 
 
